@@ -3,13 +3,13 @@ import { Button } from "./ui/button";
 
 const ContactSection = () => {
   return (
-    <section className="  flex flex-col my-10 items-center justify-center border-b space-y-10 pb-10">
-      <div className="text-center space-y-4">
-        <h2 className="scroll-m-20 text-center leading-relaxed tracking-wider pb-2 text-3xl font-semibold  first:mt-0">
+    <section className="flex flex-col items-center justify-center pb-10 my-10 space-y-10 border-b ">
+      <div className="space-y-4 text-center">
+        <h2 className="pb-2 text-3xl font-semibold leading-relaxed tracking-wider text-center scroll-m-20 first:mt-0">
           Need help with a Project?
-          <span className="text-primary block">{"Let's Talk!"}</span>
+          <span className="block text-primary">{"Let's Talk!"}</span>
         </h2>
-        <Button className="bg-violet-600 text-white text-2xl p-7">
+        <Button size={"lg"} className="text-xl text-white bg-violet-600 ">
           CONTACT US
         </Button>
       </div>

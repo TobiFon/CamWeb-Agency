@@ -103,7 +103,7 @@ const SideBar = ({
       animate="animate"
       initial="initial"
       exit="exit"
-      className=" w-screen h-screen top-0 left-0 py-5 px-1 fixed origin-top bg-primary bg-violet-600 text-white"
+      className="fixed top-0 left-0 w-screen h-full px-1 py-5 text-white origin-top  bg-primary bg-violet-600"
     >
       <Button onClick={() => setIsOpen(false)} className="absolute right-3">
         <XIcon />
@@ -114,11 +114,11 @@ const SideBar = ({
         animate="animate"
         initial="initial"
         exit="initial"
-        className="w-full h-full flex flex-col items-center justify-center gap-3"
+        className="flex flex-col items-center justify-center w-full h-full gap-3"
       >
         {links.map((link, index) => {
           return (
-            <div key={index} className=" overflow-hidden">
+            <div key={index} className="overflow-hidden ">
               <motion.li variants={LinkVariants} className="text-4xl">
                 <Link href={link.href} onClick={() => setIsOpen(false)}>
                   {link.name}
@@ -129,10 +129,10 @@ const SideBar = ({
         })}
         <motion.div
           variants={bottomVariants}
-          className="absolute bottom-5 flex flex-col justify-center items-center w-full gap-2"
+          className="absolute flex flex-col items-center justify-center w-full gap-2 bottom-5"
         >
           <p>Have a project for us?</p>
-          <Button className="bg-white text-black text-sm ">
+          <Button className="text-sm text-black bg-white ">
             LETS TALK <ArrowRight className="ml-3" />
           </Button>
         </motion.div>

@@ -2,7 +2,7 @@ import HomePage from "@/components/HomePage";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="px-5">
       <HomePage />
     </div>
   );

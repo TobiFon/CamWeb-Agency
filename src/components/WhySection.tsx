@@ -5,13 +5,13 @@ import { ArrowRight } from "lucide-react";
 
 const WhySection = () => {
   return (
-    <section className="  flex flex-col my-10 items-center justify-center border-b space-y-10 pb-10">
-      <h2 className="scroll-m-20  text-3xl font-semibold tracking-tight first:mt-0 border-l-2 border-violet-600 pl-3 w-full max-w-3xl ">
+    <section className="flex flex-col items-center justify-center pb-10 my-10 space-y-10 border-b ">
+      <h2 className="w-full max-w-3xl pl-3 text-3xl font-semibold tracking-tight border-l-2 scroll-m-20 first:mt-0 border-violet-600 ">
         <span className="text-violet-600"> Why</span> CamWeb?
       </h2>
-      <div className=" bg-violet-950 text-neutral-300 max-w-3xl p-7 lg:p-14  space-y-10">
+      <div className="w-full space-y-10 lg:max-w-3xl bg-violet-950 text-neutral-100 p-7 lg:p-14">
         <div>
-          <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight scroll-m-20">
             We get things done, right and fast
           </h3>
         </div>
@@ -19,13 +19,13 @@ const WhySection = () => {
           <WhyUs />
         </div>
         <div className="text-center">
-          <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight scroll-m-20">
             Ready to elevate your online Presence?
           </h3>
           <h4 className="scroll-m-20 text-xl  tracking-tight leading-7 [&:not(:first-child)]:mt-3">
             Contact us for consultation tailored to your bussiness needs
           </h4>
-          <Button className="bg-white text-black text-sm mt-6 ">
+          <Button className="mt-6 text-sm text-black bg-white ">
             LETS TALK <ArrowRight className="ml-3" />
           </Button>
         </div>

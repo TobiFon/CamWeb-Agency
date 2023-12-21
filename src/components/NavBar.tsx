@@ -12,12 +12,12 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex basis-full items-center h-[5vh] justify-between px-3 md:container mt-5">
+    <div className="flex basis-full items-center h-[5vh] justify-between px-3 lg:container mt-5">
       <Link href={"/"} className="flex items-center gap-2">
         <Image src={"/logo.png"} alt="logo image" height={40} width={40} />
         <h4>CamWeb</h4>
       </Link>
-      <ul className=" hidden lg:flex gap-4">
+      <ul className="hidden gap-4 lg:flex">
         <li>
           <Link href={"/"}>Home</Link>
         </li>
@@ -35,7 +35,7 @@ const NavBar = () => {
         </li>
       </ul>
       <ModeToggle />
-      <div className="lg:hidden z-20">
+      <div className="z-20 lg:hidden">
         <Button onClick={() => setIsOpen(true)}>
           <AlignRight />
         </Button>

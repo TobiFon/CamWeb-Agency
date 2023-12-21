@@ -47,12 +47,12 @@ const ServicesList = [
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl  text-background">
+    <div className="grid max-w-3xl grid-cols-1 gap-10 md:grid-cols-2 text-background">
       {ServicesList.map((service, index) => (
-        <Card key={index} className="p-5 bg-background/50">
+        <Card key={index} className="p-2 lg:p-5 bg-background/50">
           <CardHeader>
             <CardTitle>
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight ">
+              <h4 className="text-xl font-semibold tracking-tight scroll-m-20 ">
                 {service.title}
               </h4>
             </CardTitle>
