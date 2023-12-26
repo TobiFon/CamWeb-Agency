@@ -132,9 +132,11 @@ const SideBar = ({
           className="absolute flex flex-col items-center justify-center w-full gap-2 bottom-5"
         >
           <p>Have a project for us?</p>
-          <Button className="text-sm text-black bg-white ">
-            LETS TALK <ArrowRight className="ml-3" />
-          </Button>
+          <Link href={"/contact"} onClick={() => setIsOpen(false)}>
+            <Button className="text-sm text-black bg-white ">
+              LETS TALK <ArrowRight className="ml-3" />
+            </Button>
+          </Link>
         </motion.div>
       </motion.ul>
     </motion.div>

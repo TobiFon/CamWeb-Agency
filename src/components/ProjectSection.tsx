@@ -54,7 +54,11 @@ const ProjectSection = () => {
       <Button className="bg-black text-white dark:text-black dark:bg-white text-xl mt-10 mb-5">
         <Link href={"/projects"}>More Projects</Link>
       </Button>
-      <Button className="bg-violet-600 text-white text-xl">Chat With Us</Button>
+      <Link href={"/contact"}>
+        <Button className="bg-violet-600 text-white text-xl">
+          Chat With Us
+        </Button>
+      </Link>
     </section>
   );
 };

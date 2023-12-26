@@ -18,19 +18,19 @@ const NavBar = () => {
         <h4>CamWeb</h4>
       </Link>
       <ul className="hidden gap-4 lg:flex">
-        <li>
+        <li className="hover:text-primary">
           <Link href={"/"}>Home</Link>
         </li>
-        <li>
+        <li className="hover:text-primary">
           <Link href={"/about"}>About</Link>
         </li>
-        <li>
+        <li className="hover:text-primary">
           <Link href={"/services"}>Services</Link>
         </li>
-        <li>
+        <li className="hover:text-primary">
           <Link href={"/work"}>Work</Link>
         </li>
-        <li>
+        <li className="hover:text-primary">
           <Link href={"/pricing"}>Pricing</Link>
         </li>
       </ul>
