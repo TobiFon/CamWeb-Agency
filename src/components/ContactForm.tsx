@@ -45,7 +45,7 @@ const formSchema = z.object({
 type Form = z.infer<typeof formSchema>;
 
 export function ContactForm() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const form = useForm<Form>({
     resolver: zodResolver(formSchema),
     defaultValues: {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ContactForm } from "./ContactForm";
-import { MessageSquareIcon, MessagesSquareIcon } from "lucide-react";
+import { MessageSquareIcon } from "lucide-react";
 
 const ContactPage = () => {
   return (
