@@ -6,8 +6,8 @@ import { MessageSquareIcon } from "lucide-react";
 const ContactPage = () => {
   return (
     <section className=" flex flex-col my-14 items-center justify-center  pb-2 space-y-10  p-10 md:h-[75vh]">
-      <h2 className="scroll-m-20 w-full max-w-3xl pb-2 text-4xl font-extrabold tracking-widest gap-6 first:mt-0 flex items-center">
-        <MessageSquareIcon className="h-15 stroke-violet-600" size={60} />
+      <h2 className="scroll-m-20 w-full max-w-3xl pb-2 text-4xl font-extrabold tracking-widest gap-4 first:mt-0 flex items-center">
+        <MessageSquareIcon className="h-15 stroke-violet-600" size={50} />
         {"let's"} talk!
       </h2>
 

@@ -67,5 +67,35 @@
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .embla__progress {
+    z-index: 1;
+    background-color: var(--background-site);
+    position: absolute;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    left: 0;
+    right: 0;
+    bottom: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    width: 21rem;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  .embla__progress__bar {
+    background-image: linear-gradient(
+      45deg,
+      var(--brand-primary),
+      var(--brand-secondary)
+    );
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%;
   }
 }

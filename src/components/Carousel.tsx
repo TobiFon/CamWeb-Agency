@@ -1,12 +1,17 @@
 "use client";
-import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel, {
+  EmblaCarouselType,
+  EmblaOptionsType,
+} from "embla-carousel-react";
 import Review from "./Review";
 import Autoplay from "embla-carousel-autoplay";
 
 const EmblaCarousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 5000 }),
+  ]);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const carouselContent = [
     {
       img: "/ReviewImgs/1/png",

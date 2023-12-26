@@ -29,11 +29,6 @@ const SideBar = ({
       name: "Work",
       href: "/work",
     },
-
-    {
-      name: "Pricing",
-      href: "/pricing",
-    },
   ];
   const MenuVariants = {
     initial: {
@@ -114,7 +109,7 @@ const SideBar = ({
         animate="animate"
         initial="initial"
         exit="initial"
-        className="flex flex-col items-center justify-center w-full h-full gap-3"
+        className="flex flex-col items-center justify-center w-full h-full gap-5"
       >
         {links.map((link, index) => {
           return (

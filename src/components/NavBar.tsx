@@ -13,11 +13,11 @@ const NavBar = () => {
 
   return (
     <div className="flex basis-full items-center h-[5vh] justify-between px-3 lg:container mt-5">
-      <Link href={"/"} className="flex items-center gap-2">
+      <Link href={"/"} className="flex items-center gap-3">
         <Image src={"/logo.png"} alt="logo image" height={40} width={40} />
         <h4>CamWeb</h4>
       </Link>
-      <ul className="hidden gap-4 lg:flex">
+      <ul className="hidden gap-6 lg:flex">
         <li className="hover:text-primary">
           <Link href={"/"}>Home</Link>
         </li>
@@ -29,9 +29,6 @@ const NavBar = () => {
         </li>
         <li className="hover:text-primary">
           <Link href={"/work"}>Work</Link>
-        </li>
-        <li className="hover:text-primary">
-          <Link href={"/pricing"}>Pricing</Link>
         </li>
       </ul>
       <ModeToggle />
