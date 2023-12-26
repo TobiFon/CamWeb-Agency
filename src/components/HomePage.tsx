@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
@@ -9,15 +10,13 @@ import ContactSection from "./ContactSection";
 import Lenis from "@studio-freight/lenis";
 
 const HomePage = () => {
-  if (typeof window !== "undefined") {
-    const lenis = new Lenis();
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  const lenis = new Lenis();
+  function raf(time: number) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
   }
+
+  requestAnimationFrame(raf);
 
   return (
     <div>
